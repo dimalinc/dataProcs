@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class dataProcedures<liftFinish, liftStart> {
+public class dataProcedures {
 
     private static double liftShift = 0.25;
     private static double liftStart = 0;
@@ -78,7 +78,9 @@ public class dataProcedures<liftFinish, liftStart> {
         arrayListPrintToConsole(
                 lastSemicolonSeparatorRemove(
                         addSemicolonSeparatorInBetween(
-                                addAttributesNumbers(carMake, carModel, yearStart, yearFinish, attributeName, liftRange(liftStart, liftFinish))))
+                                addAttributesNumbers(
+                                        carMake, carModel, yearStart, yearFinish, attributeName,
+                                        liftRange(liftStart, liftFinish))))
 
         );
     }
